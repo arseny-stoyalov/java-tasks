@@ -5,14 +5,16 @@ import java.util.regex.Pattern;
 
 public final class Second {
 
+    //1
     public static String repeat(String word, int times){
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < word.length(); i++) {
-            for (int j = 0; j < times; j++) builder.append(word.charAt(i));
+            builder.append(String.valueOf(word.charAt(i)).repeat(Math.max(0, times)));
         }
         return builder.toString();
     }
 
+    //2
     public static int differenceMaxMin(int[] array){
         int max = 0;
         int min = 0;
@@ -23,12 +25,14 @@ public final class Second {
         return max - min;
     }
 
+    //3
     public static boolean isAvgWhole(int[] array){
         int sum = 0;
         for (int a : array) sum += a;
         return sum % array.length == 0;
     }
 
+    //4
     public static int[] cumulativeSum(int[] array){
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
@@ -38,6 +42,7 @@ public final class Second {
         return array;
     }
 
+    //5
     public static int getDecimalPlaces(String num){
         try {
             double n = Double.parseDouble(num);
@@ -49,6 +54,7 @@ public final class Second {
         return decimals.length();
     }
 
+    //6
     public static long Fibonacci(int num){
         long first = 1;
         long second = 1;
@@ -60,17 +66,20 @@ public final class Second {
         return second;
     }
 
+    //7
     public static boolean isValid(String index){
         if (index.length() > 5) return false;
         Matcher matcher = Pattern.compile("[\\D]+").matcher(index);
         return !matcher.find();
     }
 
+    //8
     public static boolean isStrangePair(String first, String second){
         return first.charAt(0) == second.charAt(second.length() - 1)
                 && first.charAt(first.length() - 1) == second.charAt(0);
     }
 
+    //9
     public static boolean isPrefix(String word, String prefix){
         if (prefix.charAt(prefix.length() - 1) == '-') prefix = prefix.substring(0, prefix.length() - 1);
         return prefix.equals(word.substring(0, prefix.length()));
@@ -81,6 +90,7 @@ public final class Second {
         return suffix.equals(word.substring(word.length() - suffix.length()));
     }
 
+    //10
     public static int boxSeq(int step){
         switch(step % 2){
             case 1: return step + 2;
