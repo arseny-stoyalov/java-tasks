@@ -12,10 +12,13 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(Second.repeat("henlo", 2));
-        System.out.println(Second.Fibonacci(7));
-        System.out.println(Second.isValid("7322"));
-        System.out.println(Second.boxSeq(3));
+        System.out.println(Third.findZip("all zip files are compressed"));
+        System.out.println(Third.isValidHexCode("#CD5C58C"));
+        System.out.println(Third.same(new int[]{9, 8, 7, 6}, new int[]{4, 4, 3, 1}));
+        System.out.println(Third.isKaprekar(297));
+        System.out.println(Third.longestZero("11111"));
+        System.out.println(Third.nextPrime(11));
+        System.out.println(Third.rightTriangle(70, 130, 100));
     }
 
 }
