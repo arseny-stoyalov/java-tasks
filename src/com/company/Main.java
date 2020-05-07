@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Arrays;
 
-import static com.company.Fourth.*;
+import static com.company.Fifth.*;
 
 /**
  * This project was made by BVT1803 student
@@ -17,16 +17,17 @@ import static com.company.Fourth.*;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(split("((()))(())()()(()())")));
-        System.out.println(toCamelCase("is_modal_open"));
-        System.out.println(overTime(9, 17, 30, 1.5));
-        System.out.println(BMI("55 kilos", "1.65 meters"));
-        System.out.println(bugger(4));
-        System.out.println(toStarShorthand("abc"));
-        System.out.println(doesRhyme("You are off to the races", "a splendid day."));
-        System.out.println(trouble(451999277, 41177722899L));
-        System.out.println(countUniqueBooks("ZZABCDEF", 'Z'));
-
+        System.out.println(Arrays.toString(encrypt("Hello")));
+        System.out.println(decrypt(new int[]{ 72, 33, -73, 84, -12, -3, 13, -13, -68 }));
+        System.out.println(canMove("Queen", "C4", "D6"));
+        System.out.println(canComplete("butlz", "beautiful"));
+        System.out.println(sumDigProd(1, 2, 3, 4, 5, 6));
+        System.out.println(Arrays.toString(sameVowelGroup(new String[]{"hoops", "chuff", "bot", "bottom"})));
+        System.out.println(validateCard(1234567890123452L));
+        System.out.println(numToEng(5));
+        System.out.println(getSha256Hash("Hey dude!"));
+        System.out.println(correctTitle("jOn SnoW, kINg IN thE noRth."));
+        System.out.println(hexLattice(1));
     }
 
 }
