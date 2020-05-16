@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Arrays;
 
-import static com.company.Fifth.*;
+import static com.company.Sixth.*;
 
 /**
  * This project was made by BVT1803 student
@@ -17,17 +17,18 @@ import static com.company.Fifth.*;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(encrypt("Hello")));
-        System.out.println(decrypt(new int[]{ 72, 33, -73, 84, -12, -3, 13, -13, -68 }));
-        System.out.println(canMove("Queen", "C4", "D6"));
-        System.out.println(canComplete("butlz", "beautiful"));
-        System.out.println(sumDigProd(1, 2, 3, 4, 5, 6));
-        System.out.println(Arrays.toString(sameVowelGroup(new String[]{"hoops", "chuff", "bot", "bottom"})));
-        System.out.println(validateCard(1234567890123452L));
-        System.out.println(numToEng(5));
-        System.out.println(getSha256Hash("Hey dude!"));
-        System.out.println(correctTitle("jOn SnoW, kINg IN thE noRth."));
-        System.out.println(hexLattice(1));
+
+        System.out.println(bell(3));
+        System.out.println(translateWord("Do"));
+        System.out.println(translateSentence("Do you think it is going to rain today?"));
+        System.out.println(validColor("rgba(0,0,0,1.5)"));
+        System.out.println(stripUrlParams("https://edabit.com?a=1&b=2&a=2", "c"));
+        System.out.println(Arrays.toString(getHashTags("Visualizing Science")));
+        System.out.println(ulam(206));
+        System.out.println(longestNonrepeatingSubstring("abcd"));
+        System.out.println(convertToRoman(3999));
+        System.out.println(formula("16 * 10 = 160 = 40 + 120"));
+        System.out.println(palindromedescendant(1));
     }
 
 }
